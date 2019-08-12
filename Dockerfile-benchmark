@@ -3,5 +3,4 @@ WORKDIR /app
 COPY benchmark/*.csproj ./
 RUN dotnet restore
 COPY benchmark/. /app/
-RUN dotnet publish -c Release -o out
-ENTRYPOINT [ "dotnet","out/benchmark.dll" ]
+ENTRYPOINT [ "dotnet","run","-c","Release" ]

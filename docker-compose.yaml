@@ -14,3 +14,8 @@ services:
     image: dalongrong/dotnetcoreaspnet-demo2:alpine
     ports: 
     - "8080:80"
+  app-benchmark:
+    build: 
+      context: ./
+      dockerfile: Dockerfile-benchmark
+    image: dalongrong/dotnetcorebenchmark-demo:alpine
