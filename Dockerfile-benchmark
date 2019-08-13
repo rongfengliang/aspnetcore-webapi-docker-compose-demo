@@ -3,4 +3,4 @@ WORKDIR /app
 COPY benchmark/*.csproj ./
 RUN dotnet restore
 COPY benchmark/. /app/
-ENTRYPOINT [ "dotnet","run","-c","Release" ]
+ENTRYPOINT [ "dotnet","run","-c","Release"]
